@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jadwal Kuliah R3 - Grid 3D</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #ffecd2, #fcb69f);
+      font-family: sans-serif;
+      padding: 2rem;
+      margin: 0;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .tile {
+      background: white;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+      transform: perspective(500px) rotateX(5deg);
+      transition: transform 0.3s ease;
+      text-align: center;
+      font-weight: bold;
+    }
+    .tile:hover {
+      transform: perspective(500px) rotateX(0deg) scale(1.03);
+    }
+    .anime-sticker {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .anime-sticker img {
+      width: 160px;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    audio {
+      display: block;
+      margin: 2rem auto;
+      width: 100%;
+      max-width: 480px;
+    }
+  </style>
+</head>
+<body>
+  <h2>📚 Jadwal Kuliah R3 Keperawatan - Genap 2024/2025</h2>
+  <div class="grid">
+    <div class="tile">Senin<br>08.00 - Keperawatan Matematika II</div>
+    <div class="tile">Senin<br>09.00 - Bahasa Inggris</div>
+    <div class="tile">Selasa<br>08.00 - Komunikasi Keperawatan II</div>
+    <div class="tile">Selasa<br>09.00 - Keperawatan Medikal Bedah II</div>
+    <div class="tile">Rabu<br>08.00 - Keperawatan Kesehatan Jiwa I</div>
+    <div class="tile">Rabu<br>10.00 - Keperawatan Anak I</div>
+  </div>
+
+  <audio autoplay loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-sunny.mp3" type="audio/mp3">
+    Browser tidak mendukung pemutar musik.
+  </audio>
+
+  <div class="anime-sticker">
+    <img src="https://i.pinimg.com/originals/eb/cd/0e/ebcd0e3c5bceea46f50775cbbe25cb87.png" alt="Anime Sticker">
+  </div>
+</body>
+</html>
